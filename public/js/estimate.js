@@ -14,6 +14,6 @@ t.render(function(){
             window.estimateSize.value = estimate;
         })
         .then(function(){
-            t.sizeTo('#estimate').done();
+            t.sizeTo('#plop').done();
         });
 });
