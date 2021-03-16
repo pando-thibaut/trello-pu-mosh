@@ -1,6 +1,6 @@
 var t = TrelloPowerUp.iframe();
 
-window.plop.addEventListener('submit', function(event){
+window.plop2.addEventListener('submit', function(event){
     event.preventDefault();
     return t.set('card', 'shared', 'estimate', window.estimateSize.value)
         .then(function(){
