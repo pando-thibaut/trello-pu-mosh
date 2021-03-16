@@ -22,6 +22,10 @@ app.use('/manifest.json', nocache, function (request, response) {
 // http://expressjs.com/en/starter/static-files.html
 app.use(express.static('public'));
 
+var routes = require( './routes/' );
+app.get('/', routes.index);
+app.get('/sandbox/', routes.sandbox);
+
 // listen for requests :)
 var listener = app.listen(process.env.PORT, function () {
   console.info(`Node Version: ${process.version}`);
